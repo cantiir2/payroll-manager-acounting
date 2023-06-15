@@ -92,5 +92,67 @@ class Data_Absensi extends CI_Controller {
 		$this->load->view('admin/absensi/tambah_dataAbsensi', $data);
 		$this->load->view('template_admin/footer');
 	}
+
+	public function update_data($id) 
+	{
+		$where = array('id_kehadiran' => $id);
+		$data['kehadiran'] = $this->db->query("SELECT * FROM data_kehadiran WHERE id_kehadiran= '$id'")->result();
+		$data['title'] = "Update Data Kehadiran";
+		
+		$this->load->view('template_admin/header', $data);
+		$this->load->view('template_admin/sidebar');
+		$this->load->view('admin/absensi/update_dataAbsensi', $data);
+		$this->load->view('template_admin/footer');
+	}
+
+	public function update_data_aksi() {
+		$this->_rules();
+
+		if($this->form_validation->run() == FALSE) {
+			$this->update_data();
+		} else {
+			$id		= $this->input->post('id_kehadiran');
+			$hadir	= $this->input->post('hadir');
+			$sakit	= $this->input->post('sakit');
+			$alpha	= $this->input->post('alpha');
+
+			$data = array(
+				'hadir' 	=> $hadir,
+				'sakit' 	=> $sakit,
+				'alpha' 	=> $alpha,
+			);
+
+			$where = array(
+				'id_kehadiran' => $id
+			);
+
+			$this->ModelPenggajian->update_data('data_kehadiran', $data, $where);
+			$this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<strong>Data berhasil diupdate!</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+				</div>');
+			redirect('admin/data_absensi');
+		}
+	}
+
+	public function _rules() {
+		$this->form_validation->set_rules('hadir','hadir','required');
+		$this->form_validation->set_rules('sakit','sakit','required');
+		$this->form_validation->set_rules('alpha','alpha','required');
+	}
+
+	public function delete_data($id) {
+		$where = array('id_kehadiran' => $id);
+		$this->ModelPenggajian->delete_data($where, 'data_kehadiran');
+		$this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<strong>Data berhasil dihapus!</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+				</div>');
+			redirect('admin/data_absensi');
+	}
 }
 ?>
