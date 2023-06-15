@@ -133,8 +133,6 @@ Tabel 1.8.
 
 Pengujian Laporan Absensi berfungsi untuk menampilkan hasil seluruh dataabsensi pegawai. Tabel pengujian Laporan Absensi dapat dilihat pada Tabel 1.9.
 
-Tabel 1.9.
-
 | Test Case | Hasil Yang diharapkan | Hasil Pengujian | Kesimpulan |
 | --- | --- | --- | --- |
 | Mengganti Password lama dengan yang baru | Mampu melakukan penggantian password lama dengan password yang baru | Sesuai Harpan | Diterima |
