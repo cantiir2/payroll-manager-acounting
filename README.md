@@ -33,7 +33,7 @@ Kasus dan pengujian berisikan Test Case, Hasil yang diharapkan, hasil pengujian 
 
     1. Pungujian Login Halaman
 
-![](RackMultipart20230615-1-6mziyd_html_cc484dce94ead997.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/57414789-1b62-4875-a8c0-90d0ca1af88c)
 
 Pengujian Halaman Login berfungsi untuk melakukan masuk ke halaman utama dashboard. Tabel penguji Halaman Login dapat dilihat pada Tabel 1.2
 
@@ -46,7 +46,7 @@ Tabel 1.2
 
     1. Pengujian Data Karyawan
 
-![](RackMultipart20230615-1-6mziyd_html_1b32e9f2c09aec8f.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/6e684eb6-c405-40d5-ac75-92497daf12fe)
 
 Pengujian Data Pegawai berfungsi untuk melakukan tambah/update/hapus datapegawai. Tabel pengujian Data pegawai dapat dilihat pada Tabel 1.3.
 
@@ -61,7 +61,7 @@ Tabel 1.3.
 
     1. Pengujian Data Jabatan
 
-![](RackMultipart20230615-1-6mziyd_html_5468948445c7a5a9.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/2c377b59-4a9b-4332-85ea-7ddd7f267b17)
 
 Pengujian Data Jabatan berfungsi untuk melakukan tambah/update/hapus datajabatan. Tabel pengujian Data Jabatan dapat dilihat pada Tabel 1.4.
 
@@ -76,7 +76,7 @@ Tabel 1.4.
 
     1. Pengujian Data Kehadiran
 
-![](RackMultipart20230615-1-6mziyd_html_c08ee505c311ebd9.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/27746bd2-adc8-4e40-a9a4-e12d0a2a2d3f)
 
 Pengujian Data Absensi berfungsi untuk melakukan tambah/update/hapus/tampil dataabsensi. Tabel pengujian Data Absensi dapat dilihat pada Tabel 1.5.
 
@@ -92,7 +92,7 @@ Tabel 1.5.
 
     1. Pengujian Laporan Gaji
 
-![](RackMultipart20230615-1-6mziyd_html_8a359bd98012258b.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/dfda389a-e661-400b-9424-53e7c0c889e1)
 
 Pengujian Laporan Gaji berfungsi untuk menampilkan hasil seluruh datagaji. Tabel pengujian Laporan Gaji dapat dilihat pada Tabel 1.6.
 
@@ -105,7 +105,7 @@ Tabel 1.6.
 
     1. Pengujian Laporan Absensi
 
-![](RackMultipart20230615-1-6mziyd_html_246e3b213af46cb9.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/ffbd7d63-a75f-4c40-b9ca-6585ba7238bb)
 
 Pengujian Laporan Absensi berfungsi untuk menampilkan hasil seluruh dataabsensi pegawai. Tabel pengujian Laporan Absensi dapat dilihat pada Tabel 1.7.
 
@@ -117,7 +117,7 @@ Tabel 1.7.
 
     1. Pengujian Laporan Slip Gaji Pegawai
 
-![](RackMultipart20230615-1-6mziyd_html_6112de8e4f825826.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/c8fff520-a8dd-48e0-8b97-b9bcabc83968)
 
 Pengujian Laporan Absensi berfungsi untuk menampilkan hasil seluruh dataabsensi pegawai. Tabel pengujian Laporan Absensi dapat dilihat pada Tabel 1.8.
 
@@ -129,7 +129,7 @@ Tabel 1.8.
 
     1. Ubah Password
 
-![](RackMultipart20230615-1-6mziyd_html_504c0a11f6701578.png)
+![image](https://github.com/cantiir2/payroll-manager-acounting/assets/36468037/a738cb78-66ad-4ef2-a8d3-c49b32e2fe6a)
 
 Pengujian Laporan Absensi berfungsi untuk menampilkan hasil seluruh dataabsensi pegawai. Tabel pengujian Laporan Absensi dapat dilihat pada Tabel 1.9.
 
