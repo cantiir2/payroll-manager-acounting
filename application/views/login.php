@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="login-content">
-      <form class="user" method="POST" action="<?php echo base_url('login') ?>">
+      <form method="POST" action="<?php echo base_url('login') ?>">
         <img src="<?php echo base_url(); ?>assets/img/avatar.svg">
         <h3 class="title"><font size="5">Silahkan login terlebih dahulu</font></h3>
         <?php echo $this->session->flashdata('pesan')?>
@@ -34,14 +34,9 @@
               </div>
               <br>
               <br>
-              <button type="submit" class="group">
-      <span class="ease absolute">
-      </span>
-      <span class="ease absolute flex"><svg class="h-2 w-2" fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-</svg>
-</span>
-      <span class="invisible relative">Login</span>
+              <button class="group  relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-black  px-8 py-3 text-base font-medium  text-white transition duration-300 ease-out hover:scale-105 hover:shadow-orange-600 active:translate-y-1">
+      <span class="absolute inset-0 bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 opacity-0 transition duration-300 ease-out group-hover:opacity-100 group-active:opacity-90"></span>
+      <span class="relative group-hover:text-white">Login</span>
     </button>
             </form>
         </div>
