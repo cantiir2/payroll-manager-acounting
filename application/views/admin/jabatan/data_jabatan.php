@@ -28,9 +28,9 @@
               <td class="text-center"><?php echo $no++ ?></td>
               <td class="text-center"><?php echo $j->nama_jabatan ?></td>
               <td class="text-center">Rp. <?php echo number_format($j->gaji_pokok,0,',','.')?></td>
-              <td class="text-center">Rp. <?php echo number_format($j->gaji_pokok*$j->bonus_gaji,0,',','.') ?></td>
+              <td class="text-center">Rp. <?php echo number_format($j->gaji_pokok * $j->bonus_gaji,0,',','.') ?></td>
               <td class="text-center">Rp. <?php echo number_format(($j->gaji_pokok + ($j->gaji_pokok * $j->bonus_gaji)) * 0.05,0,',','.')?></td>
-              <td class="text-center">Rp. <?php echo number_format($j->gaji_pokok+($j->gaji_pokok-($j->gaji_pokok*$j->bonus_gaji)) - ($j->gaji_pokok + ($j->gaji_pokok * $j->bonus_gaji)) * 0.05,0,',','.')?></td>
+              <td class="text-center">Rp. <?php echo number_format((($j->gaji_pokok * $j->bonus_gaji)) + ($j->gaji_pokok )- (($j->gaji_pokok + ($j->gaji_pokok * $j->bonus_gaji)) * 0.05),0,',','.')?></td>
               
               <td>
                 <center>

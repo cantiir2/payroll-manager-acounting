@@ -33,7 +33,7 @@
 			<td><?php echo $bulan?></td>
 		</tr>
 		<tr>
-			<td>Tahunn</td>
+			<td>Tahun</td>
 			<td>:</td>
 			<td><?php echo $tahun?></td>
 		</tr>
@@ -50,11 +50,7 @@
 				<th class="text-center">PPh 5%</th>
 				<th class="text-center">Total Gaji</th>
 			</tr>
-			<?php foreach($potongan as $p) : {
-				$alpha = $p->jml_potongan;
-			} ?>
 			<?php $no=1; foreach($cetak_gaji as $g) : ?>
-			<?php $potongan = $g->alpha * $alpha ?>
 			<tr>
 				<td class="text-center"><?php echo $no++ ?></td>
 				<td class="text-center"><?php echo $g->nik ?></td>
@@ -66,7 +62,6 @@
               	<td class="text-center">Rp. <?php echo number_format(($g->gaji_pokok + ($g->gaji_pokok * $g->bonus_gaji)) * 0.05,0,',','.')?></td>
               	<td class="text-center">Rp. <?php echo number_format($g->gaji_pokok+($g->gaji_pokok-($g->gaji_pokok*$g->bonus_gaji)) - ($g->gaji_pokok + ($g->gaji_pokok * $g->bonus_gaji)) * 0.05,0,',','.')?></td>
 			</tr>
-			<?php endforeach ;?>
 			<?php endforeach ;?>
 		</table>
 

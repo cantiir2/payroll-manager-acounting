@@ -44,6 +44,7 @@
 				<label>Jenis Kelamin</label>
 				<select name="jenis_kelamin" class="form-control" value="<?php echo $p->id_pegawai?>">
 					<option value="<?php echo $p->jenis_kelamin?>"><?php echo $p->jenis_kelamin?></option>
+					<option value="">--Pilih Jenis Kelamin--</option>
 					<option value="Laki-Laki">Laki-Laki</option>
 					<option value="Perempuan">Perempuan</option>
 				</select>
@@ -54,6 +55,7 @@
 				<label>Jabatan</label>
 				<select name="jabatan" class="form-control">
 					<option value="<?php echo $p->jabatan?>"><?php echo $p->jabatan?></option>
+					<option value="">--Pilih Jabatan--</option>
 					<?php foreach($jabatan as $j) :?>
 					<option value="<?php echo $j->nama_jabatan ?>"><?php echo $j->nama_jabatan ?></option>
 					<?php endforeach; ?>
@@ -70,6 +72,7 @@
 				<label>Status</label>
 				<select name="status" class="form-control">
 					<option value="<?php echo $p->status?>"><?php echo $p->status?></option>
+					<option value="">--Pilih Status Pegawai--</option>
 					<option value="Karyawan Tetap">Karyawan Tetap</option>
 					<option value="Karyawan Tidak Tetap">Karyawan Tidak Tetap</option>
 				</select>
@@ -86,6 +89,7 @@
 							echo "Pegawai";
 						} ?>
 					</option>
+					<option value="">--Pilih Hak Akses--</option>
 					<option value="1">Admin</option>
 					<option value="2">Pegawai</option>
 				</select>

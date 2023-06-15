@@ -75,14 +75,15 @@
 		       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 		         <thead class="thead-dark">
 		           <tr>
-		              	<td class="text-center">No</td>
-						<td class="text-center">NIK</td>
-						<td class="text-center">Nama Pegawai</td>
-						<td class="text-center">Jenias Kalamin</td>
-						<td class="text-center">Jabatan</td>
-						<td class="text-center">Hadir</td>
-						<td class="text-center">Sakit</td>
-						<td class="text-center">Alpha</td>
+		              	<th class="text-center">No</th>
+						<th class="text-center">NIK</th>
+						<th class="text-center">Nama Pegawai</th>
+						<th class="text-center">Jenias Kalamin</th>
+						<th class="text-center">Jabatan</th>
+						<th class="text-center">Hadir</th>
+						<th class="text-center">Sakit</th>
+						<th class="text-center">Alpha</th>
+						<th class="text-center">Actions</th>
 		           </tr>
 		         </thead>
 		         <tbody>
@@ -96,6 +97,12 @@
 						<td class="text-center"><?php echo $a->hadir?></td>
 						<td class="text-center"><?php echo $a->sakit?></td>
 						<td class="text-center"><?php echo $a->alpha?></td>
+						<td>
+							<center>
+							<a class="btn btn-sm btn-info" href="<?php echo base_url('admin/data_absensi/update_data/'.$a->id_kehadiran) ?>"><i class="fas fa-edit"></i></a>
+							<a onclick="return confirm('Yakin Hapus?')" class="btn btn-sm btn-danger" href="<?php echo base_url('admin/data_absensi/delete_data/'.$a->id_kehadiran) ?>"><i class="fas fa-trash"></i></a>
+							</center>
+						</td>
 					</tr>
 		            </tr>
 		          <?php endforeach; ?>

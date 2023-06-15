@@ -2,7 +2,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Abid Taufiqur Rohman | Penggajian 2022</span>
+            <span>Copyright &copy; Mochamad Alifian Hedardi Kadarusman | Penggajian 2023</span>
           </div>
         </div>
       </footer>
@@ -64,18 +64,55 @@ var myPieChart = new Chart(ctx, {
 </script>
 
 <script type="text/javascript">
+// Pie Chart Example
+var ctx = document.getElementById("myPieChartKelamin");
+var myPieChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ["Laki - Laki", "Perempuan"],
+    datasets: [{
+      data: [<?php echo $this->db->query("select jenis_kelamin from data_pegawai where jenis_kelamin='Laki-laki'")->num_rows(); ?>,
+      <?php echo $this->db->query("select jenis_kelamin from data_pegawai where jenis_kelamin='Perempuan'")->num_rows(); ?>,
+      ],
+      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#dddfeb'],
+      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#dddfeb'],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 1,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      caretPadding: 10,
+    },
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+  },
+});
+</script>
+
+<script type="text/javascript">
 // Area Chart Example
 var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data:  {
-    labels: ["Laki - Laki", "Perempuan"],
+    labels: ["Manager", "Supervisor", "Staff"],
     datasets : [{
-      label: "Berdasarkan Jenis Kelamin",
+      label: "Berdasarkan Jabatan",
       backgroundColor: 'rgb(23, 125, 255)',
       borderColor: 'rgb(23, 125, 255)',
-      data: [<?php echo $this->db->query("select jenis_kelamin from data_pegawai where jenis_kelamin='Laki-laki'")->num_rows(); ?>,
-      <?php echo $this->db->query("select jenis_kelamin from data_pegawai where jenis_kelamin='Perempuan'")->num_rows(); ?>,
+      data: [<?php echo $this->db->query("select jabatan from data_pegawai where jabatan='Manager'")->num_rows(); ?>,
+      <?php echo $this->db->query("select jabatan from data_pegawai where jabatan='Supervisor'")->num_rows(); ?>,
+      <?php echo $this->db->query("select jabatan from data_pegawai where jabatan='Staff'")->num_rows(); ?>,
     ],
     }],
   },

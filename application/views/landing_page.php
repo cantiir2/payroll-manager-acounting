@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Penggajian</title>
+      <title>Home</title>
       <!-- StyleSheets -->
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/landing/css/bootstrap/bootstrap.min.css" />
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/landing/css/fontawesome/css/all.min.css" />
@@ -24,7 +24,7 @@
                <i class="fa fa-angle-double-up text-white" aria-hidden="true"></i>
          </div>
       </a>
-      <!-- Header Section -->
+      <!-- Membuat Header/Navbar section -->
       <div class="Header" id="Home">
          <nav class="navbar fixed-top">
             <div class="container">
@@ -32,15 +32,12 @@
                <div class="collapse_menu deactive">
                   <i class="fa fa-bars" aria-hidden="true"></i>
                   <i class="fa fa-times" aria-hidden="true"></i>
-                  <ul class="nav">
+                  <ul class="nav"> 
                      <li class="nav-item">
                         <a class="nav-link" href="#Home">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#Tentang">Informassi</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#AboutMe">About Me</a>
+                        <a class="nav-link" href="#Tentang">Informasi</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('login');?>">Login</a>
@@ -55,12 +52,12 @@
                   <div class="col">
                      <div class="box">
                         <div>
-                           <h2><b><i>Penggajian Karyawan</i></b></h2>
+                           <h2><b><i>PT. Barokah TBK</i></b></h2>
                         </div>
-                        <p>Selmat datang di aplikasi Sistem Informasi Penggajian Karyawan <br>PT. Barokah TBK</p>
+                        <p>Selamat datang di informasi penggajian pegawai <br></p>
                      </div>
                   </div>
-                  <div class="col headerImg" style="background-image: url('<?php echo base_url()?>assets/img/uangg.svg');"></div>
+                  <div class="col headerImg" style="background-image: url('<?php echo base_url()?>assets/img/dasboard_image.svg'); background-size: 80%; margin-right: -10%;"></div>
                   <div class="col-12 Dicover_Parent">
                      <a href="#AboutMe">
                         <div class="Discover">
@@ -113,7 +110,7 @@
                         <div class="body">
                            <div class="title"><font size="4"><b><i>Tentang Website</font></b></i></div>
                            <div id="flip1"><font color="white">Baca Selengkapnya</font></div>
-                           <div id="panel1">aplikasi ini dibuat untuk membantu perusahaan dalam proses penggajian karyawan</div>
+                           <div id="panel1">Aplikasi ini digunakkan untuk membantu HRD untuk koleksi data penggajian pegawai/karyawan</div>
                         </div>
                      </div>
                   </div>
@@ -146,7 +143,7 @@
                         <div class="body">
                            <div class="title"><font size="4"><b><i>Halaman Admin</font></b></i></div>
                            <div id="flip2"><font color="white">Baca Selengkapnya</font></div>
-                           <div id="panel2">Administrator dapat menggunakan website untuk mengelola data pada website, halaman administrator terdapat dashboard / informasi singkat mengenai data data, terdapat data karyawan untuk pengelolaan karyawan, terdapat data jabatan untuk pengelolaan jabatan, terdapat data transaksi yang memiliki sub menu data absensi, setting potongan gaji, data gaji, terdapat data laporan yang memiliki sub menu laporan absensi, laporan gaji, cetak slip gaji.</div>
+                           <div id="panel2">Administrator dapat mengelola data pada website, halaman administrator terdapat informasi singkat mengenai data, terdapat data pegawai untuk pengelolaan pegawai, terdapat data jabatan untuk pengelolaan jabatan, terdapat data transaksi berupa sub menu data gaji, terdapat data laporan yang memiliki sub menu laporan gaji, cetak slip gaji.</div>
                         </div>
                      </div>
                   </div>
@@ -179,7 +176,7 @@
                         <div class="body">
                            <div class="title"><font size="4"><b><i>Halaman Karyawan</font></b></i></div>
                            <div id="flip3"><font color="white">Baca Selengkapnya</font></div>
-                           <div id="panel3">Halaman karyawan terdapat informasi tentangb karyawan dan cetak slip gaji.</div>
+                           <div id="panel3">Halaman karyawan terdapat informasi tentang absensi kehadiran dan cetak slip gaji.</div>
                         </div>
                      </div>
                   </div>
@@ -220,47 +217,12 @@
             </div>
          </div>
       </div>
-      <!-- Team Section -->
-      <div class="Team" id="AboutMe">
-         <div class="Section">
-            <div class="text-center">
-               <h2><b>About Me</b></h2>
-               <br>
-            </div>
-            <div class="content">
-               <div class="team row">
-                  <div class="team-memeber col-md-6 col-lg-4 col-xl-3">
-                     <div class="card">
-                        <div class="TopImg">
-                           <img src="<?php echo base_url(); ?>assets/img/logogaji.png" class="rounded-circle w-100 d-block">
-                        </div>
-                        <div class="TeamInfo text-center">
-                           <div class="Name">PENGGAJIAN KARYAWAN</div>
-                           <div class="Job">PT. Barokah TBK</div>
-                           <div class="social_links">
-                              <div class="social">
-                                 <a class="" href="www.github.com"><i class="fab fa-github" aria-hidden="true"></i></a>
-                              </div>
-                              <div class="social">
-                                 <a class="" href="www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                              </div>
-                              <div class="social">
-                                 <a class="" href="www.youtube.com"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
       <!-- Footer Section -->
       <div class="Footer" id="Footer">
          <div class="container">
             <div class="row">
                <div class="col-12 text-center my-3">
-                  Copyright &copy; Abid Taufiqur Rohman | Penggajian 2022 - All Rights Reserved
+                  Copyright &copy; Mochamad Alifian Hedardi Kadarusman | Penggajian 2023 - All Rights Reserved
                </div>
             </div>
          </div>

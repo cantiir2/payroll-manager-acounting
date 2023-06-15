@@ -9,13 +9,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="img">
-      <img src="<?php echo base_url(); ?>assets/img/login.svg">
-    </div>
     <div class="login-content">
       <form class="user" method="POST" action="<?php echo base_url('login') ?>">
         <img src="<?php echo base_url(); ?>assets/img/avatar.svg">
-        <h2 class="title"><font size="5">Penggajian Karyawan</font></h2>
+        <h3 class="title"><font size="5">Silahkan login terlebih dahulu</font></h3>
         <?php echo $this->session->flashdata('pesan')?>
               <div class="input-div one">
                  <div class="i">
@@ -35,7 +32,17 @@
                     <input type="password" class="input" name="password">
                  </div>
               </div>
-              <input type="submit" class="btn" value="Login">
+              <br>
+              <br>
+              <button type="submit" class="group">
+      <span class="ease absolute">
+      </span>
+      <span class="ease absolute flex"><svg class="h-2 w-2" fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+</svg>
+</span>
+      <span class="invisible relative">Login</span>
+    </button>
             </form>
         </div>
     </div>
