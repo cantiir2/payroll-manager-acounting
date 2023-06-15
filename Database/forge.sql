@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2023 at 05:33 AM
+-- Generation Time: Jun 15, 2023 at 03:26 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -53,7 +53,8 @@ CREATE TABLE `data_jabatan` (
 
 INSERT INTO `data_jabatan` (`id_jabatan`, `nama_jabatan`, `gaji_pokok`, `bonus_gaji`) VALUES
 (7, 'Manager', '5000000', 0.5),
-(8, 'Supervisor', '4000000', 0.1);
+(8, 'Supervisor', '4000000', 0.4),
+(11, 'Staff', '3500000', 0.3);
 
 -- --------------------------------------------------------
 
@@ -78,8 +79,12 @@ CREATE TABLE `data_kehadiran` (
 --
 
 INSERT INTO `data_kehadiran` (`id_kehadiran`, `bulan`, `nik`, `nama_pegawai`, `jenis_kelamin`, `nama_jabatan`, `hadir`, `sakit`, `alpha`) VALUES
-(1, '012021', '0987654321', 'Dodi', 'Laki-Laki', 'Staff Marketing', 24, 0, 0),
-(2, '012021', '123456789', 'Fauzi', 'Laki-Laki', 'Admin', 22, 0, 1);
+(4, '062023', '1564131684', 'Nakano Nino', 'Perempuan', 'Manager', 2, 5, 1),
+(7, '072023', '123456789', 'Mochamad Alifian Hedardi Kadarusman', 'Laki-Laki', 'Manager', 0, 0, 0),
+(8, '072023', '34646431', 'Sucipto', 'Laki-Laki', 'Supervisor', 0, 0, 0),
+(9, '072023', '4646', 'Testing', 'Perempuan', 'Supervisor', 0, 0, 0),
+(11, '062023', '34646431', 'Sucipto', 'Laki-Laki', 'Supervisor', 15, 0, 0),
+(12, '062023', '4646', 'Testing', 'Perempuan', 'Supervisor', 10, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -106,8 +111,8 @@ CREATE TABLE `data_pegawai` (
 --
 
 INSERT INTO `data_pegawai` (`id_pegawai`, `nik`, `nama_pegawai`, `username`, `password`, `jenis_kelamin`, `jabatan`, `tanggal_masuk`, `status`, `photo`, `hak_akses`) VALUES
-(1, '123456789', 'Fauzi', 'fauzi', '652ada2e14d1978901ae3d9bd425ac4b', 'Laki-Laki', 'Manager', '2020-12-26', 'Karyawan Tetap', 'pegawai-210101-a7ca89f5fc.png', 1),
-(2, '0987654321', 'Dodi', 'dodi', 'dc82a0e0107a31ba5d137a47ab09a26b', 'Laki-Laki', 'Manager', '2021-01-02', 'Karyawan Tidak Tetap', 'pegawai-210101-9847084dc8.png', 2);
+(1, '123456789', 'Mochamad Alifian Hedardi Kadarusman', 'cantiir', 'e1d74f78c827e239acc1a5a598d50128', 'Laki-Laki', 'Manager', '2020-12-26', 'Karyawan Tetap', 'pegawai-230615-7f50ea4e1c.jpg', 1),
+(2, '1564131684', 'Nakano Nino', 'Nino', '5b34995da3c9180e61e16335760c23b6', 'Perempuan', 'Staff', '2021-01-02', 'Karyawan Tidak Tetap', 'pegawai-230615-9d3b734188.jpeg', 2);
 
 -- --------------------------------------------------------
 
@@ -197,19 +202,19 @@ ALTER TABLE `potongan_gaji`
 -- AUTO_INCREMENT for table `data_jabatan`
 --
 ALTER TABLE `data_jabatan`
-  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `data_kehadiran`
 --
 ALTER TABLE `data_kehadiran`
-  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `data_pegawai`
 --
 ALTER TABLE `data_pegawai`
-  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `hak_akses`
